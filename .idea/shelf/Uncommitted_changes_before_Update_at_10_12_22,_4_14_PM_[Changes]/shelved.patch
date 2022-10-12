@@ -1,0 +1,150 @@
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+deleted file mode 100644
+--- a/.idea/vcs.xml	(revision 0c21e12fb31d476ff196ed30bcf55c9641718cd4)
++++ /dev/null	(revision 0c21e12fb31d476ff196ed30bcf55c9641718cd4)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="VcsDirectoryMappings">
+-    <mapping directory="" vcs="Git" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/.gitignore
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+deleted file mode 100644
+--- a/.idea/.gitignore	(revision 0c21e12fb31d476ff196ed30bcf55c9641718cd4)
++++ /dev/null	(revision 0c21e12fb31d476ff196ed30bcf55c9641718cd4)
+@@ -1,3 +0,0 @@
+-# Default ignored files
+-/shelf/
+-/workspace.xml
+Index: .idea/22.07SDE05-Dash-to-the-Future.iml
+===================================================================
+diff --git a/.idea/22.07SDE05-Dash-to-the-Future.iml b/.idea/22.07SDE05-Dash-to-the-Future.iml
+deleted file mode 100644
+--- a/.idea/22.07SDE05-Dash-to-the-Future.iml	(revision 0c21e12fb31d476ff196ed30bcf55c9641718cd4)
++++ /dev/null	(revision 0c21e12fb31d476ff196ed30bcf55c9641718cd4)
+@@ -1,9 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module type="JAVA_MODULE" version="4">
+-  <component name="NewModuleRootManager" inherit-compiler-output="true">
+-    <exclude-output />
+-    <content url="file://$MODULE_DIR$" />
+-    <orderEntry type="inheritedJdk" />
+-    <orderEntry type="sourceFolder" forTests="false" />
+-  </component>
+-</module>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+deleted file mode 100644
+--- a/.idea/modules.xml	(revision 0c21e12fb31d476ff196ed30bcf55c9641718cd4)
++++ /dev/null	(revision 0c21e12fb31d476ff196ed30bcf55c9641718cd4)
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectModuleManager">
+-    <modules>
+-      <module fileurl="file://$PROJECT_DIR$/.idea/22.07SDE05-Dash-to-the-Future.iml" filepath="$PROJECT_DIR$/.idea/22.07SDE05-Dash-to-the-Future.iml" />
+-    </modules>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+deleted file mode 100644
+--- a/.idea/misc.xml	(revision 0c21e12fb31d476ff196ed30bcf55c9641718cd4)
++++ /dev/null	(revision 0c21e12fb31d476ff196ed30bcf55c9641718cd4)
+@@ -1,7 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ExternalStorageConfigurationManager" enabled="true" />
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+-    <output url="file://$PROJECT_DIR$/out" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+deleted file mode 100644
+--- a/.idea/gradle.xml	(revision 0c21e12fb31d476ff196ed30bcf55c9641718cd4)
++++ /dev/null	(revision 0c21e12fb31d476ff196ed30bcf55c9641718cd4)
+@@ -1,17 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="GradleMigrationSettings" migrationVersion="1" />
+-  <component name="GradleSettings">
+-    <option name="linkedExternalProjectsSettings">
+-      <GradleProjectSettings>
+-        <option name="distributionType" value="DEFAULT_WRAPPED" />
+-        <option name="externalProjectPath" value="$PROJECT_DIR$/dash" />
+-        <option name="modules">
+-          <set>
+-            <option value="$PROJECT_DIR$/dash" />
+-          </set>
+-        </option>
+-      </GradleProjectSettings>
+-    </option>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: dash/src/main/java/Game.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class Game {\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/dash/src/main/java/Game.java b/dash/src/main/java/Game.java
+--- a/dash/src/main/java/Game.java	(revision 0c21e12fb31d476ff196ed30bcf55c9641718cd4)
++++ b/dash/src/main/java/Game.java	(date 1665603559573)
+@@ -1,3 +1,30 @@
++import java.awt.Font;
++import java.awt.Graphics;
++import java.awt.Graphics2D;
++import java.awt.RenderingHints;
++import java.awt.image.BufferedImage;
++
+ public class Game {
+ 
++  public static void main(String[] args) {
++
++    int width = 150;
++    int height = 20;
++    BufferedImage image = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
++    Graphics g = image.getGraphics();
++    g.setFont( new Font("SansSerif", Font.BOLD, 14));
++
++    Graphics2D g2 = (Graphics2D) g;
++    g2.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
++    g2.drawString("Dash to the Future", 10,15);
++
++    for (int y = 0; y < height; y++){
++      StringBuilder builder = new StringBuilder();
++      for (int x = 0; x < width; x++){
++        builder.append(image.getRGB(x,y) == -16777216 ? " " : "|");
++      }
++      System.out.println(builder);
++    }
++  }
++
+ }
