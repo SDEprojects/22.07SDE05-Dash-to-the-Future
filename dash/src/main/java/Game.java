@@ -8,7 +8,6 @@ public class Game {
             + " and attack zombies. The objective of the game is to either find a way back \n"
             + " to the past or at least find a safe haven.\n");
 
-
   }
 
 }
