@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="dash" target="11" />
+      <module name="dash.main" target="11" />
+      <module name="dash.test" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
